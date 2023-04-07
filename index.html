@@ -49,88 +49,16 @@
       </div>
     </section>
 
-    <div class="row">
-      <div class="col-sm col-lg-4">
-          <div class="card" style="width: 18rem;">
-              <img src="Resources/Images/andrew.png" class="card-img-top" alt="yar">
-              <div class="card-body">
-                <h5 class="card-title">True Fear</h5>
-                <p class="card-text">An emotion rarely felt by any.</p>
-                <a href="https://www.google.com/search?q=true+fear" class="btn btn-primary">Learn More</a>
-              </div>
-          </div>
+    <div id="gallery"></div>
+
+    <script type="text/tmpl" id="tmpl">
+    <% for (let i = 0; i < imgs.length; i++) { %>
+      <div class="img" style="width:<%=imgs[i].ww%>px;height:<%=imgs[i].hh%>px">
+        <img src="<%=imgs[i].src%>"/>
       </div>
-      <div class="col-sm col-lg-4">
-          <div class="card" style="width: 18rem;">
-              <img src="Resources/Images/andrew.png" class="card-img-top" alt="yar">
-              <div class="card-body">
-                <h5 class="card-title">True Fear</h5>
-                <p class="card-text">An emotion rarely felt by any.</p>
-                <a href="https://www.google.com/search?q=true+fear" class="btn btn-primary">Learn More</a>
-              </div>
-          </div>
-      </div>
-      <div class="col-sm col-lg-4">
-          <div class="card" style="width: 18rem;">
-              <img src="Resources/Images/andrew.png" class="card-img-top" alt="yar">
-              <div class="card-body">
-                <h5 class="card-title">True Fear</h5>
-                <p class="card-text">An emotion rarely felt by any.</p>
-                <a href="https://www.google.com/search?q=true+fear" class="btn btn-primary">Learn More</a>
-              </div>
-          </div>
-      </div>
-    </div>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, minima. Atque obcaecati similique suscipit eum ullam animi eaque et consequuntur vel ea mollitia dolore ut, quod enim eveniet sint rem.
-    </p>
-    
-    <div class="progress">
-      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
-    </div>
-
-    <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid nobis fuga eligendi consequatur laboriosam dignissimos ad, expedita inventore fugiat quas quis corporis voluptatem nostrum. Labore fugit natus inventore sunt illum?
-    </p>
-
-    <ul>
-      <li><b>Email:</b> <a href="mailto:nathan.christopher.wong@gmail.com">nathan.christopher.wong@gmail.com</a></li>
-      <li><b>Github:</b> <a href="https://toestie.github.io">toestie.github.io</a></li>
-      <li><b>Twitter:</b> <a href="https://twitter.com">none</a></li>
-    </ul>
-
-    <table class="table table-sm table-hover" style="width:400pt">
-      <thead>
-          <tr>
-              <th>Books</th>
-              <th>Movies</th>
-              <th>Games</th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr>
-              <td>The Hobbit</td>
-              <td>Hot Fuzz</td>
-              <td>Dark Souls</td>
-          </tr>
-          <tr>
-              <td>The Name of the Wind</td>
-              <td>The Avengers</td>
-              <td>The Last of Us</td>
-          </tr>
-          <tr>
-              <td>The Girl With All the Gifts</td>
-              <td>The Matrix</td>
-              <td>Dragon Age: Origins</td>
-          </tr>
-      </tbody>
-    </table>
-
-    <div class="alert alert-success" role="alert">
-      <h4 class="alert-heading">Well done!</h4>
-      <p>You scrolled to the bottom of the page! Why?</p>
-      <hr>
-      <p class="mb-0">Hover over the table. I tried real hard on that.</p>
-    </div>
+    <% } %>
+    </script>
   </body>
+
+  <script src="static/js/app.js"></script>
 </html>
