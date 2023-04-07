@@ -1,3 +1,5 @@
+// source: https://www.codehim.com/gallery/javascript-image-grid-different-sizes-and-width/
+// by Asif Mughal
 (function(){
   var cache = {};
 
@@ -32,6 +34,7 @@
   };
 })();
 
+// random image generator for testing
 function randomImg () {
   let count = 10 + Math.ceil(Math.random() * 10)
   let imgs = []
@@ -46,6 +49,8 @@ function randomImg () {
   }
   return imgs
 }
+
+// how many images can we fit in a column
 function countImgsInCol (idx, imgs) {
   let gallery = document.querySelector('#gallery')
   let gw = gallery.clientWidth
@@ -69,6 +74,8 @@ function countImgsInCol (idx, imgs) {
   }
   return count
 }
+
+// organize image list into columns lists
 function getCols (imgs) {
   let cols = []
   let rest = imgs.length
@@ -80,6 +87,8 @@ function getCols (imgs) {
   }
   return cols
 }
+
+// place images in html
 function organizeImg (imgs) {
   let gallery = document.querySelector('#gallery')
   let galleryW = gallery.clientWidth
