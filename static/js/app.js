@@ -55,7 +55,7 @@ function countImgsInCol (idx, imgs) {
   let gallery = document.querySelector('#gallery')
   let gw = gallery.clientWidth
   let maxEachCol = 4
-  let minH = 120
+  let minH = 60
   let count = 0
   for (let i = Math.min(maxEachCol, imgs.length - idx); i > 0; i--) {
     let w = 0
