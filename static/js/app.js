@@ -111,8 +111,11 @@ function organizeImg (imgs) {
   }
   gallery.innerHTML = tmpl('tmpl', { imgs })
 }
-let imgs = randomImg()
-organizeImg(imgs)
-window.addEventListener('resize', () => {
-  organizeImg(imgs)
-})
+
+function populateImg() {
+    let imgs = randomImg()
+    organizeImg(imgs)
+    window.addEventListener('resize', () => {
+        organizeImg(imgs)
+    })
+}
