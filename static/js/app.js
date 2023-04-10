@@ -119,3 +119,12 @@ function populateImg() {
         organizeImg(imgs)
     })
 }
+
+// copy email
+function copyemail() {
+    var element = document.getElementById("myToast");
+    var copynotif = new bootstrap.Toast(element);
+
+    navigator.clipboard.writeText("nathan.christopher.wong@gmail.com");
+    copynotif.show();
+}
